@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="normalize/normalize.css" />
     <link rel="stylesheet" href="reset/reset200802.css" />
     <link rel="stylesheet" href="CSS/e-commerce.css" />
@@ -12,55 +21,67 @@
   <body>
     <!-- Tete de la Page Logo Search Bar + Nav Menu -->
     <header class="header">
-      <div class="header_logo">
+      <!-- Hesder 1 start -->
+      <div class="header1">
         <!-- Logo = Gagjet Ivoire -->
-        <img src="Assets/Img/Logo.svg" alt="Gadjet Ivoire" />
+        <a href="#"
+          ><img
+            src="Assets/Img/Logo.svg"
+            class="header1_logo"
+            alt="Gadjet Ivoire"
+        /></a>
+        <!-- Bouton trigram -->
+        <button class="header1_btn" aria-label="bouton_menu">
+          <span class="header1__trigram--btn">&#9776;</span>
+        </button>
+        <!-- header 1 end -->
       </div>
-      <!-- Bouton trigram -->
-      <button class="header_btn" aria-label="bouton_menu">
-        <span class="header__trigram--btn">&#9776;</span>
-      </button>
-      <nav class="nav">
-        <ul class="nav_list">
-          <li class="nav_item">
-            <img src="Assets/lcones/icon-acc.svg" />
-            <a href="#">Accueil</a>
-          </li>
-          <li class="nav_item">
-            <img src="Assets/lcones/icon-mblt.svg" />
-            <a href="#">Smarphone</a>
-          </li>
-          <li class="nav_item">
-            <img src="Assets/lcones/icon-pc.svg" />
-            <a href="#"> Ordinateurs</a>
-          </li>
-          <li class="nav_item">
-            <img src="Assets/lcones/icon-cam.svg" />
-            <a href="#"> Camera</a>
-          </li>
-          <li class="nav_item">
-            <img src="Assets/lcones/icon-drone.svg" />
-            <a href="#"> Drones</a>
-          </li>
-          <li class="nav_item">
-            <img src="Assets/lcones/icon-game.svg" />
-            <a href="#"> Consoles & Jeux</a>
-          </li>
-          <li class="nav_item">
-            <img src="Assets/lcones/icon-save.svg" />
-            <a href="#"> Stokages</a>
-          </li>
-          <li class="nav_item">
-            <img src="Assets/lcones/icon-box.svg" />
-            <a href="#"> Accessoires</a>
-          </li>
-          <li class="nav_item">
-            <img src="Assets/lcones/icon-user.svg" />
-            <a href="#">Mon Compte</a>
-          </li>
-        </ul>
-      </nav>
+      <!-- header 2 start -->
+      <div class="header2">
+        <nav class="nav">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <i class="fas fa-home"></i>
+              <a href="#">Accueil</a>
+            </li>
+            <li class="nav_item">
+              <i class="fas fa-mobile-alt"></i>
+              <a href="#">Smarphone</a>
+            </li>
+            <li class="nav_item">
+              <i class="fas fa-laptop"></i>
+              <a href="#"> Ordinateurs</a>
+            </li>
+            <li class="nav_item">
+              <i class="fas fa-camera"></i>
+              <a href="#"> Camera</a>
+            </li>
+            <li class="nav_item">
+              <i class="fas fa-rocket"></i>
+              <a href="#"> Drones</a>
+            </li>
+            <li class="nav_item">
+              <i class="fas fa-gamepad"></i>
+              <a href="#"> Consoles & Jeux</a>
+            </li>
+            <li class="nav_item">
+              <i class="fas fa-hdd"></i>
+              <a href="#"> Stokages</a>
+            </li>
+            <li class="nav_item">
+              <i class="fas fa-archive"></i>
+              <a href="#"> Accessoires</a>
+            </li>
+            <li class="nav_item">
+              <i class="fas fa-user"></i>
+              <a href="#">Mon Compte</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- header 2 end -->
+      </div>
     </header>
+    <!-- JS file -->
     <script src="JS/main.js"></script>
   </body>
 </html>
