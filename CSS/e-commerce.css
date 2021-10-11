@@ -134,6 +134,7 @@ li {
         display: flex;
         align-items: center;
         gap: 2em;
+        margin-right: 1em;
         font-size: var(--fs-body);
     }
     .header1_seconnecter, 
@@ -170,7 +171,7 @@ li {
     .header1_search {
         width: 450px;
         height: 40px;
-        margin-left: 8em;
+        margin-left: 5em;
     }
 
     .header1_search--input {
@@ -187,14 +188,16 @@ li {
 
 /* Header2 start */
 .header2 .nav {
-    transform: translateX(-100%);
-    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+    /* transform: translateX(-100%);
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1); */
+    display: none;
 }
  
  
 @media (min-width: 800px){
     .header2 .nav {
-        transform: translateX(0);
+        /* transform: translateX(0); */
+        display: block;
     }
      .header2 .sticky {
          position:fixed;
@@ -213,9 +216,10 @@ li {
     padding: 0.8em 1.5em;
 }
 
-/* classe ajouter */
+/* classe nav-open ajouter */
 .nav-open .nav {
-    transform: translateX(0);
+    /* transform: translateX(0); */
+   display: block;
 }
 
 @media (min-width: 800px) {
