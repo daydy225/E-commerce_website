@@ -5,16 +5,6 @@ navBouton.addEventListener('click', () => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
 const navSticky = document.querySelector('.header2 .nav')
 
 const sticky = navSticky.offsetTop
@@ -34,3 +24,17 @@ window.onload = () => {
     navSticky.classList.remove("sticky")
     }
 }
+
+const swiper = new Swiper(".product_slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
