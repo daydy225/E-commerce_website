@@ -30,3 +30,15 @@ navClose.addEventListener("click", () => {
   // navContainer.style.left = "-30rem";
   // navContainer.style.width = "0";
 });
+
+/*
+=============
+PopUp
+=============
+ */
+
+/*
+================
+Fixed Navigation
+================
+ */

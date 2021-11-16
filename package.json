@@ -1,0 +1,24 @@
+{
+  "name": "e-commerce_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daydy225/E-commerce_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daydy225/E-commerce_website/issues"
+  },
+  "homepage": "https://github.com/daydy225/E-commerce_website#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "aos": "^2.3.4"
+  }
+}
