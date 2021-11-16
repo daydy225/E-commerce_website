@@ -7,96 +7,124 @@
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    />
+    <!-- Glide js CDN -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
     />
 
-    <link rel="stylesheet" href="normalize/normalize.css" />
-    <link rel="stylesheet" href="reset/reset200802.css" />
-    <link rel="stylesheet" href="CSS/e-commerce.css" />
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Customs file -->
+    <link rel="stylesheet" href="./CSS/e-commerce.css" />
     <title>Gadjet Ivoire</title>
   </head>
   <body>
-    <!-- Tete de la Page Logo Search Bar + Nav Menu -->
-    <header class="header">
-      <!-- Hesder 1 start -->
-      <div class="header1">
-        <!-- Logo = Gagjet Ivoire -->
-        <a href="#"
-          ><img
-            src="Assets/Img/Logo.svg"
-            class="header1_logo"
-            alt="Gadjet Ivoire"
-        /></a>
-        <!-- Bouton trigram -->
-        <button class="header1_btn" aria-label="bouton_menu">
-          <span class="header1__trigram--btn">&#9776;</span>
-        </button>
+    <!--
+      =================================
+              Entete + Menu
+      =================================
+    -->
+    <header class="header" id="header">
+      <!-- Naviauation  -->
+      <div class="navigation">
+        <div class="container">
+          <nav class="nav">
+            <div class="nav__hamburger">
+              <svg>
+                <use xlink:href="./Assets/Img/sprite.svg#icon-menu"></use>
+              </svg>
+            </div>
 
-        <!-- Search bar -->
-        <div class="header1_search">
-          <label for="search" class="fas fa-search"></label>
-          <input type="text" class="header1_search--input" />
-          <label for="close" class="fas fa-times"></label>
+            <div class="nav__logo">
+              <a href="/" class="scroll-link">
+                <img src="./Assets/Img/Logo.svg" alt="Logo Gadjet Ivoire" />
+              </a>
+            </div>
+
+            <div class="nav__menu">
+              <div class="menu__top">
+                <a href="#header" class="home">
+                  <svg>
+                    <use xlink:href="./Assets/Img/sprite.svg#icon-home"></use>
+                  </svg>
+                </a>
+                <span class="nav__category"> Accueil </span>
+                <a href="#header" class="close__toggle">
+                  <svg>
+                    <use xlink:href="./Assets/Img/sprite.svg#icon-cross"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <i class="fas fa-th-large"></i>
+                  <a href="#category" class="nav__link scroll-link"
+                    >Catégories</a
+                  >
+                </li>
+
+                <li class="nav__item">
+                  <i class="fab fa-blogger-b"></i>
+                  <a href="#news" class="nav__link scroll-link">Blog</a>
+                </li>
+
+                <li class="nav__item">
+                  <i class="fas fa-address-book"></i>
+                  <a href="#contact" class="nav__link scroll-link">Contacts</a>
+                </li>
+
+                <li class="nav__item">
+                  <i class="fas fa-ad"></i>
+                  <a href="#" class="nav__link scroll-link">Promos</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav__icons">
+              <a href="#" class="icon__item">
+                <svg class="icon__user">
+                  <use xlink:href="./Assets/Img/sprite.svg#icon-user"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="icon__item">
+                <svg class="icon__search">
+                  <use xlink:href="./Assets/Img/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="icon__item">
+                <svg class="icon__cart">
+                  <use
+                    xlink:href="./Assets/Img/sprite.svg#icon-shopping-basket"
+                  ></use>
+                </svg>
+                <span id="cart__total">0</span>
+              </a>
+            </div>
+          </nav>
         </div>
-        <!-- compte + panier -->
-        <div class="header1_accounts">
-          <a href="#" class="header1_compte">Creer un compte</a>
-          <button class="header1_seconnecter">Se connecter</button>
-          <button class="header1_panier">
-            <i class="fas fa-shopping-bag"></i>Panier
-          </button>
-        </div>
-        <!-- header 1 end -->
-      </div>
-      <!-- header 2 start -->
-      <div class="header2">
-        <nav class="nav">
-          <ul class="nav_list">
-            <li class="nav_item">
-              <i class="fas fa-home"></i>
-              <a href="#">Accueil</a>
-            </li>
-            <li class="nav_item">
-              <i class="fas fa-mobile-alt"></i>
-              <a href="#">Smarphone</a>
-            </li>
-            <li class="nav_item">
-              <i class="fas fa-laptop"></i>
-              <a href="#"> Ordinateurs</a>
-            </li>
-            <li class="nav_item">
-              <i class="fas fa-camera"></i>
-              <a href="#"> Camera</a>
-            </li>
-            <li class="nav_item">
-              <i class="fas fa-rocket"></i>
-              <a href="#"> Drones</a>
-            </li>
-            <li class="nav_item">
-              <i class="fas fa-gamepad"></i>
-              <a href="#"> Consoles & Jeux</a>
-            </li>
-            <li class="nav_item">
-              <i class="fas fa-hdd"></i>
-              <a href="#"> Stokages</a>
-            </li>
-            <li class="nav_item">
-              <i class="fas fa-archive"></i>
-              <a href="#"> Accessoires</a>
-            </li>
-            <li class="nav_item">
-              <i class="fas fa-user"></i>
-              <a href="#">Mon Compte</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- header 2 end -->
       </div>
     </header>
+
+    <!-- Glide JS  -->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- JS file -->
-    <script src="JS/main.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/product.js"></script>
+    <script src="./JS/slider.js"></script>
   </body>
 </html>
